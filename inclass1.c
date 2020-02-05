@@ -31,8 +31,11 @@ int main(int argc, char** argv){
 		int+long
 	*/
 	printf("#####student code start#####\n");
+	int type_integer = 0;
+	long l = 0;;
+	printf("size of int + char: %lu\n", sizeof(type_integer+l));
 	//////////Your code here//////////
-
+	
 	//example
 	int type_int = 0;
 	long type_long = 0;
@@ -81,7 +84,11 @@ int main(int argc, char** argv){
 	*/
 	printf("#####student code start#####\n");
     //////////Your code here//////////
-
+	printf(INT_MAX+1);
+	printf(UINT_MAX+1);
+	printf(LONG_MAX+1);
+	printf((float)FLT_MAX+1);
+	printf((float)FLT_MAX+1000);
 	//////////End of the code/////////
 	printf("#####student code end#####\n");
 
@@ -124,8 +131,8 @@ int main(int argc, char** argv){
     }
 
     //TODO: uncommend below code after complete print_string fucntion
-    //print_string(s1);
-    //print_string(s2);
+    print_string(s1);
+    print_string(s2);
 
     //exit status for the OS, 0 means no error.
     //It is different than the C true/false value
@@ -139,7 +146,9 @@ void func(int i){
 void func1(int* i){
 	(*i)++;
 }
-
+void print_string (char* s) {
+	printf("%s \n",s);
+}
 /*
 	TODO:
 	Add a function that name as "print_string", which takes a string

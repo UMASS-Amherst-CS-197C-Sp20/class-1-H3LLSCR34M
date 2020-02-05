@@ -9,8 +9,8 @@ int main(void) {
 		within user specified range.
 		Google rand() and srand()
 	*/
-	//////////Your code here//////////
-	int secret = 77;
+	/////a/////Your code here//////////
+	int secret = 50;
 
 	//////////End of the code/////////
 
@@ -34,4 +34,8 @@ int main(void) {
 			printf("Too low! Guess again.\n");
 		}
 	}
-}
+}pwd
+ls
+:i
+:q
+c
