@@ -10,7 +10,14 @@ int main(void) {
 		Google rand() and srand()
 	*/
 	/////a/////Your code here//////////
-	int secret = 50;
+	int lower_Range = 0;
+	int upper_Range = 0;
+	printf("Enter the Upper Range\n");
+	scanf("%d",&upper_Range);
+	printf("\n Enter Lower Range \n");
+	scanf("%d", &lower_Range);
+	printf("\n");
+	int secret = (rand() % (upper_Range + 1 - lower_Range)) + lower_Range;
 
 	//////////End of the code/////////
 
@@ -34,8 +41,4 @@ int main(void) {
 			printf("Too low! Guess again.\n");
 		}
 	}
-}pwd
-ls
-:i
-:q
-c
+}

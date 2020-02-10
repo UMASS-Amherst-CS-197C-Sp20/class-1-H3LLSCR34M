@@ -31,9 +31,9 @@ int main(int argc, char** argv){
 		int+long
 	*/
 	printf("#####student code start#####\n");
-	int type_integer = 0;
-	long l = 0;;
-	printf("size of int + char: %lu\n", sizeof(type_integer+l));
+	double type_integer = 0;
+	float l = 0;;
+	printf("size of float and double: %lu\n", sizeof(type_integer+l));
 	//////////Your code here//////////
 	
 	//example
@@ -82,16 +82,17 @@ int main(int argc, char** argv){
 		print the value of max value of float + 1
 		print the value of max value of float + 1000
 	*/
-	printf("#####student code start#####\n");
+   printf("#####student code start#####\n");
     //////////Your code here//////////
-	printf(INT_MAX+1);
-	printf(UINT_MAX+1);
-	printf(LONG_MAX+1);
-	printf((float)FLT_MAX+1);
-	printf((float)FLT_MAX+1000);
-	//////////End of the code/////////
+   printf("Value of int max + 1: %d\n ",INT_MAX+1);
+   printf("Value of unsigned int max + 1:%u\n ", (unsigned int)UINT_MAX+1);
+   printf("Value of long max +1 : %ld\n ",(long)LONG_MAX+1);
+   printf("FLT_MAX : %g\n",(float)FLT_MAX+1);
+   printf("FLT_MAX : %g\n",(float)FLT_MAX+1000);
+  // printf("Why Are you not printing \n");	
+    //////////End of the code/////////
 	printf("#####student code end#####\n");
-
+//	printf("Amin already has plans this friday\n");
 	printf("\n");
 
 	printf("\n String's pointer size \n");
@@ -102,6 +103,10 @@ int main(int argc, char** argv){
 	/*
 		TODO:
 		Why we are getting this result?
+		Since both s1 and s2 are char pointers, the sizeof
+function returns 8 (since I have a 64 bit machine). As the char pointers
+has a fixed size... It doesnt measure the length of the string, only the
+size of a char pointer is returned. 
 	*/
 
 	printf("\nIs 1 equals to true? \n");
@@ -133,7 +138,6 @@ int main(int argc, char** argv){
     //TODO: uncommend below code after complete print_string fucntion
     print_string(s1);
     print_string(s2);
-
     //exit status for the OS, 0 means no error.
     //It is different than the C true/false value
 	return 0;
